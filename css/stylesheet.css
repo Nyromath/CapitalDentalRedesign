@@ -1,0 +1,402 @@
+/* css reset */
+* {
+  margin : 0;
+  padding : 0;
+  box-sizing : border-box;
+}
+
+/* Mobile & Default Styling */
+html, body{
+  height : 100%;
+  width : 100%;
+  margin : 0;
+  display : table;
+  font-family: 'Cairo', sans-serif;
+}
+
+header {
+  height: 0%;
+  background : #2D9CDB;
+  width : 100%;
+  display: table-row;
+}
+
+.menuBars{
+  float : left;
+  color : white;
+  font-size : 30px;
+  margin : 15px;
+  display : block;
+}
+
+.logo{
+  width: 60%;
+  padding: 10px;
+  float: right;
+}
+
+/* Prevents logo from becoming too big and expanding the header too high */
+@media only screen and (min-width: 500px){
+  .logo{
+    width: 300px;
+  }
+}
+
+.headerNav{
+  display : none;
+  width : 30%;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.navListItem{
+  padding: 10px;
+  color : white;
+  font-weight: bold;
+}
+
+.navListItem : hover{
+  color: #ffd44c
+}
+
+.homePage{
+  background-color: #ffd44c;
+  display: table-row;
+}
+
+.welcomeHeader{
+  color: #024283;
+  text-align: center;
+}
+
+.bookOnlineForm{
+  width: 80%;
+  margin:  20px auto;
+  background: #2D9CDB;
+  color: white;
+}
+
+.formHeader{
+  text-align: center;
+}
+
+.formLabel{
+  margin-left: 10px;
+}
+
+.formInput{
+  width: 80%;
+  height: 30px;
+  margin: 0px 10%;;
+}
+
+.formMessage{
+  height : 75px;
+  width: 80%;
+  margin: 0px 10%;
+}
+
+.formSubmit{
+  width: 50%;
+  height: 30px;
+  margin: 15px 25%;
+  font-family: "Cairo", sans-serif;
+  color: black;
+  background-color: #ffd44c;
+  font-weight: bolder;
+}
+
+.servicesNavMobile{
+  background-color: #2D9CDB;
+  height : 40px;
+  text-align : center;
+  font-size: 30px;
+}
+
+.servicesNavBar{
+  display: none;
+}
+
+.servicesNavList{
+  background-color: #188ccc;
+}
+
+.servicesNavItem{
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+
+.servicesHeading{
+  text-align: center;
+  font-weight: 700;
+  color: #024283;
+}
+
+.servicesParagraph{
+  color: black;
+}
+
+.servicesImage{
+  display: block;
+  width: 80%;
+  margin: 0px auto;
+}
+
+.fastbracesBeforeAfter{
+  font-weight: bold;
+  text-align: center;
+  color: #024283;
+}
+
+.servicesBooking{
+  width: 50%;
+  height: 75px;
+  margin: 15px 25%;
+  font-family: "Cairo", sans-serif;
+  color: black;
+  background-color: #ffd44c;
+  font-weight: bolder;
+  font-size: 24px;
+}
+
+.contactFacebook{
+  width: 100%;
+  display: block;
+  text-align: center;
+  color: white;
+  background-color: #024283;
+}
+
+.FBLink{
+  color: white;
+  text-decoration: none;
+}
+
+.facebookLink{
+  display: inline;
+  text-align: center;
+  font-size: 24px;
+  vertical-align: middle;
+}
+
+.contactFBHeading{
+  display: inline;
+  text-align: center;
+}
+
+.contactHeading, .aboutHeading{
+  font-size: 48px;
+  color: #024283;
+}
+
+.contactLocation{
+  color: #024283;
+  display: block;
+  background-color: #ffd44c;
+}
+
+.bookOnlineFormContact{
+  width: 80%;
+  margin:  20px auto;
+  background: #2D9CDB;
+  color: white;
+}
+
+.aboutSubHeading{
+  margin-left: 30px;
+}
+
+.aboutImage{
+  width: 60%;
+  display: block;
+  margin: auto;
+}
+
+.endoHeading{
+  color: #024283;
+}
+
+footer{
+  height : 5%;
+  background : #2D9CDB;
+  width : 100%;
+  display : table-row;
+}
+
+.active {
+  display : inline;
+}
+
+.inactive{
+  display: none;
+}
+
+
+/* Desktop Styling */
+@media only screen and (min-width: 800px){
+  .menuBars{
+    display: none;
+  }
+
+  .logo{
+    float: left;
+  }
+
+  .headerNavContainer{
+    float: right;
+    margin-top: 10px;
+    margin-right: 25px;
+  }
+
+  .headerNav {
+    display : inline;
+  }
+
+  .navListItem{
+    font-size: 24px;
+  }
+
+  .homePage{
+    background-image: url("../images/home-background.jpg");
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-color: #fdcf45;
+    height: 90%;
+  }
+
+  .welcomeHeader{
+    text-align: right;
+    margin-right: 20px;
+    font-size: 48px;
+  }
+
+  .bookOnlineForm{
+    width: 40%;
+    float: right;
+    margin-right: 20px;
+  }
+
+  .servicesNavMobile{
+    display: none;
+  }
+
+  .servicesRow{
+    width : 100%;
+    display: table-row;
+  }
+
+  .servicesNavBar{
+    display: block;
+  }
+
+  .servicesNavItem{
+    text-align: left;
+    margin-left: 10px;
+  }
+
+  .servicesCol1{
+    width : 20%;
+    background-color : #188ccc;
+    height : 100%;
+    float : left;
+  }
+
+  .servicesCol2{
+    width : 40%;
+    float : left;
+  }
+
+  .servicesHeading{
+    text-align: left;
+    font-size: 36px;
+    padding: 0px 5%;
+  }
+
+  .servicesParagraph{
+    font-size: 18px;
+    padding: 5% 10%;
+  }
+
+  .servicesCol3{
+    width : 40%;
+    float : left;
+  }
+
+  .servicesImage{
+    padding: 30px;
+    width: 60%;
+    display: block;
+    margin: auto;
+  }
+
+  .fastbracesBeforeAfter{
+    font-size: 24px;
+  }
+
+  .servicesRow :: after{
+    clear : both;
+    display : table;
+    content : "";
+  }
+
+  .contactPage{
+    display: table-row;
+  }
+
+  .contactRow{
+    width : 100%;
+  }
+
+  .contactCol1{
+    width : 60%;
+    float : left;
+  }
+
+  .contactCol2{
+    width : 40%;
+    float : left;
+  }
+
+  .bookOnlineFormContact{
+    width: 90%;
+    float: right;
+    margin-right: 20px;
+  }
+
+  .contactRow :: after{
+    clear : both;
+    display : table;
+    content : "";
+  }
+
+  .aboutRow{
+    width : 100%;
+  }
+
+  .aboutCol1{
+    width : 40%;
+    float : left;
+  }
+
+  .aboutImage{
+    width: 40%;
+    margin: auto;
+  }
+
+  .aboutCol2{
+    width : 60%;
+    float : left;
+  }
+
+  .aboutRow :: after{
+    clear : both;
+    display : table;
+    content : "";
+  }
+
+  .inactive{
+    display: inline;
+  }
+
+}
