@@ -190,10 +190,21 @@ header {
   color: #024283;
 }
 
-.contactLocation{
-  color: #024283;
+.contactLocationBackground{
   display: block;
   background-color: #ffd44c;
+  width: 100%;
+}
+
+.contactLocation{
+  color: #024283;
+  width: 90%;
+  margin: auto;
+}
+
+.contactInfo{
+  width: 80%;
+  margin: auto;
 }
 
 .bookOnlineFormContact{
